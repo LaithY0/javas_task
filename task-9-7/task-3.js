@@ -1,6 +1,6 @@
 
 
-let x = Number(prompt("enter your number "));
+let x = Number(prompt("enter number from 1 to 12 "));
 
 switch(x){
 
