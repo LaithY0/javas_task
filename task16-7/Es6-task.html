@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1</title>
+</head>
+
+
+<body>
+
+
+    
+</body>
+
+<script>
+
+    // task 1 
+
+console.log("-------------- task 1 --------------- ");
+
+        let mycar = {
+            color: "red",
+            wheels: 5,
+            engine: { cylinders: 4, size: 2.2 },
+
+        };
+
+        let othercar = {
+            color: "red",
+            wheels: 4,
+            engine: { cylinders: 4, size: 2.2 },
+
+        };
+        if (mycar.color == othercar.color && mycar.wheels == othercar.wheels && mycar.engine == othercar.engine){
+            console.log("same property values");
+        }
+        else{
+            console.log("not same property values");
+        }
+
+
+        // task 2 
+
+        console.log("-------------- task 2 --------------- ");
+
+
+
+        function copyToClipboard(str) {
+  navigator.clipboard.writeText(str)
+    .then(() => {
+      console.log('Text copied to clipboard');
+    })
+    .catch((error) => {
+      console.error('Error copying text to clipboard:', error);
+    });
+}
+
+
+const stringToCopy = 'Hello, world!';
+copyToClipboard(stringToCopy);
+
+
+
+
+ // task 26
+
+ console.log("-------------- task 26 --------------- ");
+ 
+
+     function YN(str){
+        if (str == "yes"){
+            console.log(true);
+        }
+        if (str == "no"){
+            console.log(false);
+        }
+     }
+     YN("yes");
+
+
+
+  // task 10 
+
+  console.log("-------------- task 10 --------------- ");
+
+  function spcarr (str){
+
+    let a = ["laith" , "ahmed " , "mahmoud " , "mohammed "];
+
+    str = a[str];
+
+    return str ;
+
+  }
+  console.log(spcarr(1));
+
+    
+ // task 11
+
+ console.log("-------------- task 11 --------------- ");
+
+ function colorcode (num){
+
+    num = "#"+num;
+    return num;
+ };
+ console.log(colorcode("ffff"));
+
+
+
+  // task 13
+
+  console.log("-------------- task 13 --------------- ");
+
+  function StrToByte (str){
+
+    str = str + " => " + "this string is " + str.length + " bytes." 
+     return str ;
+  };
+
+  console.log(StrToByte("laith"));
+
+
+
+  // task 24
+
+  console.log("-------------- task 24 --------------- ");
+
+  function dcapitalize (str){
+   
+    return str.charAt(0).toLowerCase() +  str.slice(1);
+
+  }
+console.log(dcapitalize("LAITH"));
+
+
+
+
+ // task 34
+
+ console.log("-------------- task 34 --------------- ");
+
+ function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const min = 1.55;
+const max = 10.55;
+const randomInt = getRandomInt(min, max);
+console.log(randomInt);
+
+
+
+ // task 3
+
+ console.log("-------------- task 33 --------------- ");
+
+ function randomnum(min , max){
+    // min = Math.ceil(min);
+    // max = Math.floor(max);
+
+    return (Math.random() * (max - min - 1 )) + min;
+ }
+
+let a = 10.6;
+let u = 20.5;
+let s = randomnum(a,u);
+console.log(s);
+
+
+
+</script>
+</html>

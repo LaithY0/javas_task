@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>task 2</title>
+    <style>
+
+        #div1{
+            width: 230px;
+            font-size: xx-large;
+            background-color: yellow;
+            font-weight: bold;
+            border: solid black 2px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="div1" onmouseover= "mouseo" onmouseout="mousot">Hello World!</div>
+    
+</body>
+
+
+<script>
+
+    let div = document.getElementById('div1');
+
+    div.addEventListener('onmouseover' , function mouseo(){
+
+        div.style.width = '500px'
+        div.style.height = "200px";
+
+    });
+
+</script>
+</html>

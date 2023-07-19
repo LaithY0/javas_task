@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 11-15</title>
+</head>
+<body>
+    <h1>task 11-15</h1>
+    
+</body>
+
+<script>
+
+
+function largerNubmer(x,y){
+    if(x > y ){
+        console.log(x);
+    }
+    else{
+        console.log(y);
+    }
+}
+
+largerNubmer(100,55);
+
+
+console.log("--------------------  task 12 ----------------------------");
+
+
+// task 12
+
+function small (x,y,z){
+    if (x < y && x < z){
+        console.log(x);
+    }
+    if (y < x && y < z){
+        console.log(y);
+    }
+    if (z < y && x > z){
+        console.log(z);
+    }
+}
+
+small(15,100,60);
+
+console.log("--------------------  task 13 ----------------------------");
+
+
+// task 13
+
+function shourtlength(str1 , str2 , str3 ,str4 ,str5){
+
+    let smallest = str1 ;
+
+    if (smallest.length > str2.length){
+        smallest = str2;
+    }
+
+    if (smallest.length > str3.length){
+        smallest = str3;
+    }
+
+    if (smallest.length > str4.length){
+        smallest = str4;
+    }
+
+    if (smallest.length > str5.length){
+        smallest = str5;
+    }
+
+    console.log(smallest);
+}
+
+
+shourtlength("aalllll","aa555a","aakkkkk","a552aaa","aaa5a77a");
+
+console.log("--------------------  task 14 ----------------------------");
+
+
+// task 14
+
+
+function longestlength(str1 , str2 , str3 ,str4 ,str5){
+
+let longest = str1 ;
+
+if (longest.length < str2.length){
+    longest = str2;
+}
+
+if (longest.length < str3.length){
+    longest = str3;
+}
+
+if (longest.length < str4.length){
+    longest = str4;
+}
+
+if (longest.length < str5.length){
+    longest = str5;
+}
+
+console.log(longest);
+}
+
+
+longestlength("alllll","aa555a","aakkk","a552aaa","aaa45a77a");
+
+
+console.log("--------------------  task 15-16 ----------------------------");
+
+
+// task 15
+
+ function iseven(x){
+    if (x%2 == 0){
+        console.log("this number is even");
+    }
+    else{
+        console.log("this number is odd");
+    }
+ }
+
+ iseven(4);
+
+
+
+
+
+
+
+</script>
+</html>

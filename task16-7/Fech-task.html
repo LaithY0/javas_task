@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  foreach tasks </title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    
+// task 1 
+
+console.log("---------- task 1 -----------");
+
+function doubleValues(arr){
+
+    let y = [];
+
+    arr.forEach(function(val){
+        y.push(val * 2 );
+    })
+
+    console.log(y);
+    
+}
+ let h = [1, 4 , 6 ,10 , 20];
+
+doubleValues(h);
+
+
+
+// task 2
+
+console.log("---------- task 2 -----------");
+
+function onlyEvenValues(arr){
+    
+    let y = [];
+
+    arr.forEach(function(val){
+
+        if (val % 2 == 0 ){
+
+            y.push(val);
+        }
+
+    })
+
+    console.log(y);
+    
+}
+
+let a = [10,3,7,6,2,4,15];
+
+onlyEvenValues(a);
+
+
+// task 3
+
+console.log("---------- task 3 -----------");
+
+
+function showFirstAndLast(str){
+   let y = [String];
+
+   str.forEach(function(val){
+    let x = val.charAt(0);
+    let m = val.charAt(val.length - 1);
+    let a = x + m ;
+    y.push(a);
+   
+   })
+
+   console.log(y);
+}
+
+let i = ["laith" , "ahmed" , "sara" ];
+
+showFirstAndLast(i);
+
+
+
+// task 4
+
+console.log("---------- task 4 -----------");
+
+
+function addKeyAndValue(arr,key,value){
+  
+  arr.forEach(function (val) {
+    val[key] = value;
+  });
+ return arr;
+
+}
+
+let cars =[
+    {name: "Kia" , color : "red"},
+
+   { name : "BMW" , color : "blue"},
+
+  {  name : "Mercedes" , color : "black"},
+
+]
+
+let addkey = addKeyAndValue(cars , "engine" , "4000");
+
+console.log(addkey);
+
+
+
+// task 5
+
+console.log("---------- task 5 -----------");
+
+
+// A  E  I  O  U
+
+
+function vowelCount(str){
+
+    let y = ["a" , "e" , "i" , "o" , "u"];
+    let x = [];
+
+    str.toLowerCase().split('').forEach(function(val){
+
+        if (y.includes(val)){
+            if (x[val]){
+                x[val]++;
+            }
+            else{
+                x[val] = 1;
+            }
+        }
+    });
+
+    return x ;
+  
+}
+
+let p = vowelCount("Laith Ahmed OoEU");
+
+console.log(p);
+
+
+</script>
+</html>

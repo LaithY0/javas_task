@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1 </title>
+
+    <style>
+
+        #div1{
+            width: 250px;
+            height: 200px;
+            background-color: blue;
+            border: solid gold 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1" onclick="changecolor"></div>
+</body>
+<script>
+
+    let div = document.getElementById('div1');
+
+    div.addEventListener('click' ,  function changecolor(){
+
+    div.style.backgroundColor = "red";
+
+}
+);
+
+
+
+
+</script>
+
+</html>
